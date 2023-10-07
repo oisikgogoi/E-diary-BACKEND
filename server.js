@@ -16,7 +16,9 @@ require('dotenv').config()
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors())
+app.use(cors({
+  origin:['https://ediary-sdxh.onrender.com']
+}))
 
 //---------------------------------- connecting to mongodb  -----------------------------------------
 mongoose.connect('mongodb+srv://oisik:diary123@diary.mdxzsvz.mongodb.net/?retryWrites=true&w=majority')
