@@ -37,6 +37,9 @@ app.use('/api/user/',userRoutes)
 //App Routes
 app.use('/api/note/',appRoutes)
 
+app.get('/checkWorking',(req,res){
+  res.json("backend works ")
+})
 
 //----------------------------------listenong to  app -----------------------------------------
 app.listen(5000, () => {
