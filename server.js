@@ -17,7 +17,7 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin:['https://ediary-sdxh.onrender.com']
+  origin: '*'
 }))
 
 //---------------------------------- connecting to mongodb  -----------------------------------------
