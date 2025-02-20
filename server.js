@@ -37,7 +37,7 @@ app.use('/api/user/',userRoutes)
 //App Routes
 app.use('/api/note/',appRoutes)
 
-app.get('/checkWorking',(req,res){
+app.get('/checkWorking',(req,res)=>{
   res.json("backend works ")
 })
 
